@@ -1,0 +1,10 @@
+C:\JSP_TEST\C_workspace\AnimalShelter\bin\Debug\AnimalShelter.exe.config
+C:\JSP_TEST\C_workspace\AnimalShelter\bin\Debug\AnimalShelter.exe
+C:\JSP_TEST\C_workspace\AnimalShelter\bin\Debug\AnimalShelter.pdb
+C:\JSP_TEST\C_workspace\AnimalShelter\obj\Debug\AnimalShelter.csprojAssemblyReference.cache
+C:\JSP_TEST\C_workspace\AnimalShelter\obj\Debug\AnimalShelter.Form1.resources
+C:\JSP_TEST\C_workspace\AnimalShelter\obj\Debug\AnimalShelter.Properties.Resources.resources
+C:\JSP_TEST\C_workspace\AnimalShelter\obj\Debug\AnimalShelter.csproj.GenerateResource.cache
+C:\JSP_TEST\C_workspace\AnimalShelter\obj\Debug\AnimalShelter.csproj.CoreCompileInputs.cache
+C:\JSP_TEST\C_workspace\AnimalShelter\obj\Debug\AnimalShelter.exe
+C:\JSP_TEST\C_workspace\AnimalShelter\obj\Debug\AnimalShelter.pdb
