@@ -45,12 +45,24 @@ namespace AnimalShelter
             CusAddress.Text = cus.Address;
             CusDescription.Text = cus.Description;
             CusIsQualified.Text = cus.IsQualified.ToString();
+            
+            CusPetInfo.Text = "";
+            foreach(Pet pet in cus.MyPets)
+            {
+                CusPetInfo.Text += pet.Name + " : " + pet.MakeSound()l
+                // Dog or Cat 판단 // boolean type 리턴
+                if (pet is Cat)
+                {
+                    CusPetInfo.Text += " : " + (pet as Cat).Scratch();
+                }
+                else if(pet is Dog)
+                {
+                    CusPetInfo.Text += " : " + (pet as Dog).Bite();
+                }
 
-            if(cus.MyCat != null)
-                CusPetInfo.Text = cus.MyCat.Name + " : " + cus.MyCat.MakeSound() + Environment.NewLine;
-
-            if (cus.MyDog != null)
-                CusPetInfo.Text += cus.MyDog.Name + " : " + cus.MyDog.MakeSound();
+                // 줄 넘김
+                CusPetInfo.Text += Environment.NewLine;
+            }
         }
 
         private void CusList_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -79,6 +91,8 @@ namespace AnimalShelter
             Customer cus = new Customer("Ian", "Na", new DateTime(2000, 1, 2));
             Cat cat = new Cat(1, "Lucas", "White", "Male");
             cus.Adopt(cat);
+            Cat cat2 = new Cat(3, "Ruby", "Brown", "Female");
+            cus.Adopt(cat2);
 
             Dog dog = new Dog(2, "Happy", "Black", "Male", DogBreed.Jindo);
             cus.Adopt(dog);

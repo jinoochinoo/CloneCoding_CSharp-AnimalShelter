@@ -6,20 +6,12 @@ using System.Threading.Tasks;
 
 namespace AnimalShelter
 {
-    public class Cat
+    public class Cat : Pet
     {
-        public int PetId;
-        public string Name;
-        public string Color;
-        public string Gender;
-        public string Description;
         
         public Cat(int petId, string name, string color, string gender)
+            : base(petId, name, color, gender)
         {
-            this.PetId = petId;
-            this.Name = name;
-            this.Color = color;
-            this.Gender = gender;
         }
 
         public string MakeSound()
